@@ -23,7 +23,6 @@ _ZODIAC_RANGES = [
 def _in_range(m: int, d: int, start: tuple[int, int], end: tuple[int, int]) -> bool:
     sm, sd = start
     em, ed = end
-    # Handle wrap-around ranges (e.g., Capricorn)
     if sm > em:
         return (m > sm or (m == sm and d >= sd)) or (m < em or (m == em and d <= ed))
     return (m > sm or (m == sm and d >= sd)) and (m < em or (m == em and d <= ed))
@@ -38,6 +37,5 @@ def infer_zodiac_sign(birth_date: date) -> str:
     for sign, start, end in _ZODIAC_RANGES:
         if _in_range(m, d, start, end):
             return sign
-    # Fallback (should not happen)
     return "Capricorn"
 
