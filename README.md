@@ -75,7 +75,6 @@ This will output JSON containing the inferred `zodiac` and the generated `insigh
 astro_insight/
   __init__.py
   zodiac.py          # Sign inference
-  rules.py           # Daily themes (hinting)
   llm.py             # OpenAI integration
   cache.py           # In-memory cache
   personalize.py     # Simple scoring
