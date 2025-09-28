@@ -39,17 +39,17 @@ Create an insight:
 curl -s -X POST http://127.0.0.1:8000/insight \
   -H 'Content-Type: application/json' \
   -d '{
-    "name": "Ritika",
-    "birth_date": "1995-08-20",
-    "birth_time": "14:30",
-    "birth_place": "Jaipur, India"
-  }'
+  "name": "Sadiva",
+  "birth_date": "1999-04-02",
+  "birth_time": "14:30",
+  "birth_place": "Delhi, India"
+}'
 ```
 Example response:
 ```json
 {
-  "zodiac": "Leo",
-  "insight": "Your innate leadership and warmth will shine today. Embrace spontaneity and avoid overthinking."
+    "zodiac": "Aries",
+    "insight": "Today, Sadiva, embrace your adventurous spirit by exploring new ideas and perspectives. Take a bold step in your learning journey—whether it's picking up a book outside your usual interests or joining a workshop. Your curiosity can lead to exciting discoveries, so trust your instincts and let your energy guide you!"
 }
 ```
 
